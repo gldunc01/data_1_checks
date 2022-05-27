@@ -8,12 +8,12 @@ clients = [
     {
     "name" : "John",
     "age" : 12,
-    "gender" : "male",
+    "gender" : "Male",
     "city_state" : ("Phoenix", "Arizona")},
     {
     "name" : "Kim",
     "age" : 39,
-    "gender" : "female",
+    "gender" : "Female",
     "city_state" : ("Seattle", "Washington")
     }
 ]
@@ -21,9 +21,9 @@ clients = [
 # print one of the dictionary items and one of the tuples
 # added formatting which is why you see so many prints
 
-print('Our new client is:\n', "", clients[1]["name"])
-print(" ", clients[1]["age"])
-print(" ", clients[1]["gender"])
+print('Our new client is:\n', "", "Name:", clients[1]["name"])
+print(" ","Age:", clients[1]["age"])
+print(" ", "Gender:", clients[1]["gender"])
 
 print(" ", 'Coming all the way from', clients[1]["city_state"][0], clients[1]["city_state"][1])
 
