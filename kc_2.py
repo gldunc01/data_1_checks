@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
-GA_data = pd.read_excel(r'C:\Users\gduncan\OneDrive - Metro United Way, Inc. (191100)\Desktop\Professional Development\Python\Code_Louisville\data_1_checks\assets\GeneralAssembly.xlsx')
+GA_data = pd.read_excel(r'assets\GeneralAssembly.xlsx')
 
 GA_data_by_career = GA_data.groupby('Which career path did you choose with General Assembly?', as_index=False)['Respondent ID'].nunique()
 
