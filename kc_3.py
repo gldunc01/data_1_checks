@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 
 
-data = pd.read_excel('JCPS_Homeless_Students.xlsx', sheet_name='20-21 Elementary', usecols= [1,9,10,11], nrows = 89)
+data = pd.read_csv('JCPS_Homeless_Students.csv', usecols= [1,9,10,11], nrows = 89)
 
 # Replaced the * in the Male and Female columns with 0
 data['Male'] = data['Male'].replace('*','0')
