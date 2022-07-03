@@ -50,9 +50,9 @@ def chart(df):
     Pie Chart"""
 
     males_num = sum(df.Male)
-    total_homeless_num = sum(df['Total Homeless Count'])
-    male_homeless_stu_percent = (males_num/total_homeless_num)*100
     num_females = sum(df.Female)
+    total_homeless_num = males_num + num_females
+    male_homeless_stu_percent = (males_num/total_homeless_num)*100
     female_homeless_stu_percent = (num_females/total_homeless_num)*100
     cumul_data = [male_homeless_stu_percent, female_homeless_stu_percent]
 
